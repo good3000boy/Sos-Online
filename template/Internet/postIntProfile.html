@@ -1,0 +1,40 @@
+
+<style>
+    *{
+        direction: rtl;
+    }
+    li{
+        list-style-type: none;
+        display: inline-block;
+    }
+</style>
+{% if user.is_authenticated %}
+    username : {{user}}<br>
+    نام:
+    {{user.postInt.first_name}}<br>
+    نام خانوادگی:
+    {{user.postInt.last_name}}<br>
+    شماره تلفن ثابت:
+    {{user.postInt.phoneNum}}<br>
+    آدرس:
+    {{user.postInt.address}}<br>
+    سرویس:
+    {{user.postInt.service}}<br>
+    شرکت:
+    {{user.postInt.industry}}<br>
+    پهنای باند:
+    {{user.postInt.band}}<br>
+    مدت زمان:
+    {{user.postInt.time}}<br>
+    حجم سرویس:
+    {{user.postInt.capacity}}<br>
+    مودم:
+    {{user.postInt.modem}}<br>
+    شرایط:
+    {{user.postInt.agree}}<br>
+    <button class="w3-btn w3-green" ><a href="{% url 'accounts:index' %}">ثبت</a></button>
+    <button class="w3-btn w3-green" ><a href="{% url 'internet:edit_postint' %}">ویرایش اطلاعات</a></button>
+
+{% else %}
+    <h2> login</h2>
+{% endif %}

@@ -1,0 +1,32 @@
+<style>
+    *{
+        direction: rtl;
+    }
+    li{
+        list-style-type: none;
+        display: inline-block;
+    }
+</style>
+<div class="row" style="direction: rtl;padding: 150px 400px">
+    {% if user.is_authenticated %}
+
+        <h2> مشخصات شما:</h2>
+        نام کاربری : {{user}}<br>
+        نام: {{user.first_name}}<br>
+        نام خانوادگی : {{user.last_name}}<br>
+        ایمیل: {{user.email}}<br>
+       آدرس: {{user.profile.address}} <br>
+        سن: {{user.profile.age}}<br>
+        شماره تماس: {{user.profile.mobile}}<br>
+        جنسیت: {{user.profile.gender}}<br>
+        شهر: {{user.profile.city}}<br>
+
+
+    {% else %}
+        <h3> برای مشاهده پروفایل خود حتما باید وارد سیستم شوید</h3>
+        <button class="w3-btn w3-green" ><a href="{% url 'accounts:login' %}">ورود</a></button>
+        <button class="w3-btn w3-green" ><a href="{% url 'accounts:register' %}">عضویت</a></button>
+
+    {% endif %}
+
+</div>

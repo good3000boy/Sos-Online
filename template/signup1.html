@@ -1,0 +1,60 @@
+{% load crispy_forms_tags %}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    li{
+        list-style-type: none;
+        display: inline-block;
+    }
+
+</style>
+
+<div class="container">
+    <div class="row" style="text-align: center">
+        <div class="col-md-6 ">
+            <form action="" method="POST" style="direction: rtl">
+                {% csrf_token %}
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sd-3 " ><br>
+                           <label >نام کاربری</label>
+                            {{form.username|crispy}}<br>
+                        </div>
+                        <div class="col-sd-3 "><br>
+                            {{form.first_name.label|crispy}}
+                            {{form.first_name|crispy}}
+                        </div>
+                    </div>
+                </div>
+                {{form.last_name.label|crispy}}<br>
+                {{form.last_name|crispy}}<br>
+
+                {{form.email.label|crispy}}<br>
+                {{form.email|crispy}}<br>
+
+                {{form.password1.label|crispy}}<br>
+                {{form.password1|crispy}}<br>
+
+                {{form.password2.label|crispy}}<br>
+                {{form.password2|crispy}}<br>
+
+                {{profile_form.bio.label|crispy}}<br>
+                {{profile_form.bio|crispy}}<br>
+
+                {{profile_form.age.label|crispy}}<br>
+                {{profile_form.age|crispy}}<br>
+
+                {{profile_form.gender.label|crispy}}<br>
+                {{profile_form.gender|crispy}}<br>
+
+                {{profile_form.color.label|crispy}}<br>
+                {{profile_form.color|crispy}}<br>
+
+                {{profile_form.birth_day.label|crispy}}<br>
+                {{profile_form.birth_day|crispy}}<br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+

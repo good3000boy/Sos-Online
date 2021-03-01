@@ -1,0 +1,31 @@
+<html lang="fa" dir="rtl">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        *{
+            text-align: right;
+            padding: 0px 10px 0px 10px;
+            color: #0b2e13;
+        }
+    </style>
+<h1>برای ارسال درخواست باید عضو شوید </h1>
+<h4>لطفا یکی از گزینه ها رو انتخاب کنید</h4>
+{% load crispy_forms_tags %}
+    <form action=""  method="POST">
+        {% csrf_token %}
+
+            {% if user.is_authenticated %}
+                {% crispy form %}
+
+            {% else %}
+
+                <a href="{% url 'accounts:login' %}">ورود</a><br>
+                <a href="{% url 'accounts:register' %}">عضویت</a>
+            {% endif %}
+
+
+</form>
+
+</html>

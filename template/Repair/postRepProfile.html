@@ -1,0 +1,32 @@
+<style>
+    *{
+        direction: rtl;
+    }
+    li{
+        list-style-type: none;
+        display: inline-block;
+    }
+</style>
+
+{% if user.is_authenticated %}
+    username : {{user}}<br>
+    
+    نوع کامپیوتر:
+    {{user.postRep.kind}}<br>
+    نوع درخواست:
+    {{user.postRep.req}}<br>
+    توضیح مختصر درباره ایرادات دستگاه:
+    {{user.postRep.bio}}<br>
+    تلفن ضروری :
+    {{user.postRep.phoneNum}}<br>
+    آدرس:
+    {{user.postRep.address}}<br>
+    شرایط:
+    {{user.postRep.agree}}<br>
+    
+    <button class="w3-btn w3-green" ><a href="{% url 'accounts:index' %}">ثبت</a></button>
+    <button class="w3-btn w3-green" ><a href="{% url 'repair:postRep_edit' %}">ویرایش اطلاعات</a></button>
+
+{% else %}
+    <h2> login</h2>
+{% endif %}

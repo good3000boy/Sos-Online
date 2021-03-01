@@ -1,0 +1,33 @@
+<style>
+    *{
+        direction: rtl;
+    }
+    li{
+        list-style-type: none;
+        display: inline-block;
+    }
+</style>
+
+{% if user.is_authenticated %}
+    username : {{user}}<br>
+    
+    درس مورد نظر:
+    {{user.postEdu.kind}}<br>
+
+    نوع تدریس:
+    {{user.postEdu.way}}<br>
+
+    تلفن ضروری :
+    {{user.postEdu.phoneNum}}<br>
+    آدرس:
+    {{user.postEdu.address}}<br>
+    توضیحات:
+    {{user.postEdu.bio}}<br>
+    شرایط:
+    {{user.postEdu.agree}}<br>
+    <button class="w3-btn w3-green" ><a href="{% url 'accounts:index' %}">ثبت</a></button>
+    <button class="w3-btn w3-green" ><a href="{% url 'education:postEdu_edit' %}">ویرایش اطلاعات</a></button>
+
+{% else %}
+    <h2> login</h2>
+{% endif %}

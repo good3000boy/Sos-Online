@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fa">
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>SOS Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/fontawsom-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/slider/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/slider/css/owl.theme.default.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!--        &lt;!&ndash; Compiled and minified CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+
+<!--    &lt;!&ndash; Compiled and minified JavaScript &ndash;&gt;-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+</head>
+<body>
+    <div class="container body-container">
+        <!-- ################# Header Starts Here#######################--->
+        <div class="header row">
+            <header >
+                <div class="row header-nav" style="padding-top: 0px; padding: 0px">
+                        <div class=" no-padding col-sm-12 nav-img" style="padding-left: 0px;padding-right: 0px;">
+                            <img class="image" style="width: 100%;padding: 0px;height: 125px;" src="{% static 'images\logoo.jpg' %}"  alt="">
+                           <a data-toggle="collapse" data-target="#menu" href="#menu" ><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
+                        </div>
+                    </div>
+                <div  class=" ">
+                    <div class="row header-nav" style="padding: 3px 0px 3px 0px;">
+                        <div class="col-md-1" >
+
+                        </div>
+                        <div id="menu" class="col-md-11 d-none d-md-block nav-item" >
+                            <ul>
+
+                                <li class="dropdown" ><a href="#" style="background-color: #003366;color: orange;padding-right: 30px;text-decoration: none;">کافی نت داران</a> </li>
+                                <li class="dropdown"><a href="{% url 'software:software' %}" class="dropbtn" type="button" >نرم افزارها<span class="caret" style="padding-right: 2px;">  </span> </a>
+                                  <div class="row dropdown-menu" style="min-width: 170px;">
+                                      <div class="col-sm-6 " >
+                                        <a href="{% url 'software:GIS' %}">GIS </a>
+                                        <a href="{% url 'software:NS' %}">NS</a>
+                                        <a href="{% url 'software:Matlab' %}">Matlab</a>
+                                      </div>
+                                      <div class="col-sm-6" >
+                                            <a href="{% url 'software:AutocadSoft' %}">Auto Cad</a>
+                                            <a href="{% url 'software:3dMax' %}">3D Max</a>
+                                            <a href="{% url 'software:Linux' %}">سیستم عامل لینوکس</a>
+                                      </div>
+                                  </div>
+                              </li>
+                                <li class="dropdown"><a href="{% url 'internet:internet' %}"  class="dropbtn" type="button" >سرویس اینترنتی<i class="caret" style="padding-right: 2px;margin-right: 3px;"></i> </a>
+                                  <div class="row dropdown-menu" style="min-width: 100px;text-align: right">
+
+                                      <div class="col-sm-11" >
+                                            <a href="{% url 'internet:ADSL' %}"> ADSL</a>
+<!--                                            <a href="#"> فیبرنوری</a>-->
+                                            <a href="#">انواع مودم </a>
+
+                                      </div>
+                                  </div>
+                              </li>
+                                <li class="dropdown"><a href="#" class="dropbtn" type="button"> بیمه<span class="caret" style="padding-right: 2px;" ></span> </a>
+                                  <div class="row dropdown-menu" style="min-width: 220px;">
+                                      <div class="col-sm-6 " >
+                                            <a href="{% url 'insurance:Third' %}">بیمه شخص ثالث </a>
+                                            <a href="{% url 'insurance:Body' %}">بیمه بدنه</a>
+                                            <a href="{% url 'insurance:Responsibility' %}">بیمه مسئولیت</a>
+                                            <a href="{% url 'insurance:Omar' %}">بیمه عمر</a>
+                                      </div>
+                                      <div class="col-sm-6" >
+                                            <a href="{% url 'insurance:Accident' %}">بیمه حوادث</a>
+                                            <a href="{% url 'insurance:Fire' %}">بیمه آتش سوزی</a>
+                                            <a href="{% url 'insurance:Barbarry' %}">بیمه باربری</a>
+                                            <a href="{% url 'insurance:Doctor' %}">بیمه مسئولیت پزشکان</a>
+                                      </div>
+                                  </div>
+                              </li>
+                                <li class="dropdown"><a href="{% url 'education:education' %}" class="dropbtn" type="button"> آموزش <span class="caret" style="padding-right: 2px;"></span> </a>
+                                   <div class="row dropdown-menu" style="min-width: 360px;">
+                                      <div class="col-sm-4 " >
+                                            <a href="{% url 'education:BasicComputer' %}">کامپیوتر پایه</a>
+                                            <a href="{% url 'education:SecondaryComputer' %}">کامپیوتر متوسطه</a>
+                                            <a href="{% url 'education:AdvancedComputer' %}">کامپیوتر پیشرفته</a>
+                                            <a href="{% url 'education:Net' %}">اینترنت</a>
+                                            <a href="{% url 'education:ICDL' %}">ICDL</a>
+                                      </div>
+                                      <div class="col-sm-4" >
+                                          <a href="{% url 'education:Photoshop' %}">فتوشاپ</a>
+                                          <a href="{% url 'education:Office' %}">آفیس</a>
+                                          <a href="{% url 'education:Autocad' %}">اتوکد</a>
+                                          <a href="{% url 'education:Accounting' %}">برنامه حسابداری</a>
+                                          <a href="{% url 'education:Video' %}">فیلمبرداری</a>
+                                      </div>
+                                      <div class="col-sm-4" >
+                                            <a href="{% url 'education:English' %}">زبان انگلیسی</a>
+                                            <a href="{% url 'education:Python' %}">زبان برنامه نویسی پایتون</a>
+                                            <a href="{% url 'education:Design' %}">طراحی سایت به زبان پایتون</a>
+                                            <a href="{% url 'education:Bourse' %}">بورس</a>
+                                            <a href="{% url 'education:Photo' %}">عکاسی</a>
+                                      </div>
+                                  </div>
+                              </li>
+                                <li class="dropdown"><a href="{% url 'service:service' %}" class="dropbtn" type="button"> خدمات اینترنتی<span class="caret" style="padding-right: 2px;"></span> </a>
+                                   <div class="row dropdown-menu" style="min-width: 300px;">
+                                      <div class="col-sm-6" >
+                                            <a href="#">ثبت نام کنکورها </a>
+                                            <a href="#">ثبت نام وام ها</a>
+                                            <a href="#">ثبت نام دانشگاه ها</a>
+                                            <a href="#">سایر ثبت نام ها</a>
+                                      </div>
+                                      <div class="col-sm-3" >
+                                          <a href="#">تایپ</a>
+                                          <a href="#">ترجمه</a>
+                                          <a href="#">پرینت</a>
+                                          <a href="#">پاورپوینت</a>
+                                          <a href="#">پروپوزال</a>
+                                      </div>
+                                      <div class="col-sm-3" >
+                                            <a href="#">تحقیق</a>
+                                            <a href="#">مقاله</a>
+                                            <a href="#">پروژه</a>
+                                            <a href="#">پایان نامه</a>
+                                      </div>
+                                  </div>
+                              </li>
+                                <li class="dropdown"><a href="{% url 'repair:repair' %}" class="dropbtn" type="button"> تعمیرات<span class="caret" style="padding-right: 2px;"></span> </a>
+                                   <div class="row dropdown-menu" style="min-width: 300px;">
+                                      <div class="col-sm-4" >
+                                            <a href="{% url 'building:computer' %}">کامپیوتر </a>
+                                            <a href="{% url 'repair:Mobile' %}">موبایل</a>
+                                            <a href="{% url 'repair:Monitor' %}">مانیتور</a>
+                                            <a href="{% url 'repair:CCTV' %}">دوربین مدار بسته</a>
+                                      </div>
+                                      <div class="col-sm-4" >
+                                          <a href="{% url 'repair:Electric' %}">لوازم برقی</a>
+                                          <a href="{% url 'repair:TV' %}">تلویزیون</a>
+                                          <a href="{% url 'repair:Phone' %}">تلفن</a>
+                                          <a href="{% url 'repair:Refrigerator' %}">یخچال</a>
+                                          <a href="{% url 'repair:Iphone' %}">آیفون</a>
+                                      </div>
+                                      <div class="col-sm-4" >
+                                            <a href="{% url 'repair:Alarm' %}">دزدگیر اماکن</a>
+                                            <a href="{% url 'repair:Table' %}">تابلو روان</a>
+                                            <a href="{% url 'repair:LED' %}">تابلو ال ای دی</a>
+                                            <a href="{% url 'repair:Digital' %}">دستگاه دیجیتال</a>
+                                      </div>
+                                  </div>
+                              </li>
+                                <li class="dropdown"><a href="{% url 'building:building' %}" class="dropbtn" type="button"> ساختمان<span class="caret" style="padding-right: 2px;"></span> </a>
+                                  <div class="row dropdown-menu" style="min-width: 180px">
+                                      <div class="col-sm-6 " >
+                                            <a href="{% url 'building:map' %}">نقشه کشی</a>
+                                            <a href="{% url 'building:pipe' %}">لوله کشی</a>
+                                            <a href="{% url 'building:wire' %}">سیم کشی</a>
+                                      </div>
+                                      <div class="col-sm-6" >
+                                          <a href="{% url 'building:build' %}">پیمانکاری </a>
+                                          <a href="{% url 'building:kanaf' %}">کناف</a>
+                                          <a href="{% url 'building:cabinet' %}">کابینت</a>
+                                          <a href="{% url 'building:josh' %}">جوشکاری</a>
+                                      </div>
+                                  </div>
+                              </li>
+                                <li class="dropdown" ><a href="{% url 'shad:shad' %}" style="background-color: #003366;color: white;text-decoration: none;">شاد</a> </li>
+                                <li class="dropdown" ><a href="{% url 'accounts:index' %}" style="background-color: #003366;color: white;text-decoration: none;padding-left: 10px;">صفحه اصلی</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </header>
+        </div>
+        <div class="row" style="background-color: #f5c6cb; direction: rtl;padding: 3px 20px;">
+
+            {% if not user.is_authenticated %}
+                <a class="reg" href="{% url 'accounts:login' %}">ورود </a>
+                <a class="reg" href="{% url 'accounts:register' %}">عضویت </a>
+            {% else %}
+                <span style="color: #0b2e13;padding-left: 20px;font-size: 14px;"><p style="color: white; "> سلام, {{user.first_name}} </p></span>
+
+                <a class="reg"  href="{% url 'accounts:profile' %}">پروفایل</a>
+                <a class="reg"  href="{% url 'accounts:edit_profile' %}">ویرایش پروفایل</a>
+                <a class="reg"  href="{% url 'accounts:change_password' %}">تغییر رمز</a>
+                <a class="reg"  href="{% url 'accounts:logout' %}">خروج</a>
+
+            {% endif %}
+
+
+        <script>M.toast({html: "{{message}}", classes: 'green rounded', displayLength:2000});</script>
+        {% if messages %}
+            {% for message in messages %}
+                {% if message.tags == 'success'%}
+                    <script>M.toast({html: "{{message}}", classes: 'green rounded', displayLength:2000});</script>
+                {% elif message.tags == 'info'%}
+                    <script>M.toast({html: "{{message}}", classes: 'blue rounded', displayLength:2000});</script>
+                {% elif message.tags == 'warning'%}
+                    <script>M.toast({html: "{{message}}", classes: 'orange rounded', displayLength:10000});</script>
+                {% elif message.tags == 'error'%}
+                    <script>M.toast({html: "{{message}}", classes: 'red rounded', displayLength:10000});</script>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+            </div>
+        <!-- ################# Body Here #######################--->
+        {% block content %}
+
+        {% endblock %}
+        <!-- ################# Footer Here#######################--->
+        <footer class="footer row" >
+
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <h2>درباره ما</h2><hr><br><br>
+                    <p style="text-align: right" >
+                        اولین شرکت آنلاین در کار تعمیرات و خدمات کامپیوتری و آنلاین در تمامی کارهای مختلف
+                    </p><hr>
+                    <p style="text-align: right" >جلب رضایت مشتری هدف ماست</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h2>لینک های مفید</h2><br>
+                    <ul class="list-unstyled link-list">
+                        <li style="text-align: center"><a ui-sref="about" href="{% url 'service:service' %}">خدمات اینترنتی </a></li>
+                        <li><a ui-sref="portfolio" href="{% url 'repair:repair' %}">تعمیرات </a></li>
+                        <li><a ui-sref="products" href="{% url 'education:education' %}">آموزش</a></li>
+                        <li><a ui-sref="gallery" href="#/gallery">بیمه</a></li>
+                        <li><a ui-sref="contact" href="#/contact">کافی نت داران</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 map-img">
+                    <h2>ارتباط با ما</h2><hr><br>
+                    <address class="md-margin-bottom-40">
+                        SOS Online <br>
+                        Marthandam (K.K District) <br>
+                        Tamil Nadu, IND <br>
+                        Phone: +91 9159669599 <br>
+                        Email: <a href="mailto:info@anybiz.com" class="">info@bluedart.in</a><br>
+                        Web: <a href="smart-eye.html" class="">www.bluedart.in</a>
+                    </address>
+
+                </div>
+            </div>
+    </footer>
+    </div>
+</body>
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/scroll-fixed/jquery-scrolltofixed-min.js' %}"></script>
+<script src="{% static 'plugins/slider/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</html>

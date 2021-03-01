@@ -1,0 +1,27 @@
+<style>
+    *{
+        direction: rtl;
+    }
+    li{
+        list-style-type: none;
+        display: inline-block;
+    }
+</style>
+<h1>برای ارسال درخواست باید عضو شوید </h1>
+<h4>لطفا یکی از گزینه ها رو انتخاب کنید</h4>
+<form action=""  method="POST">
+
+{% csrf_token %}
+
+    {% if user.is_authenticated %}
+        {{form.as_p}}
+        <input type="submit" name="submit" value="Sign up"/>
+    {% else %}
+
+        <a href="{% url 'accounts:login' %}">ورود</a><br>
+        <a href="{% url 'accounts:register' %}">عضویت</a>
+{% endif %}
+
+
+</form>
+

@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row" style="direction: rtl;text-align: right;padding: 10px 30px 10px 10px;">
+    <h1><mark>آموزش</mark></h1>
+    <p>آموزش فرایند تسهیل یادگیری، یا کسب دانش، مهارت، ارزش، اخلاق، اعتقادات و عادت‌ها است. </p>
+    <p>آموزش تکرار تجربه‌است، به منظور اینکه معنای تجربه گسترش پیدا کند و برای هدایت و کنترل تجربیات بعدی، فرد را بهتر قادر سازد.</p>
+    <p>آموزش آنلاین و حضوری همراه با اساتید مجرب</p>
+    <p>با توجه به وضعیت پیش آمده ، ما روش تدریس آنلاین را پیشنهاد می کنیم</p>
+</div>
+<div class="row " style="direction: rtl">
+    <div style="padding-right: 50px;padding-bottom: 50px;text-align: right">
+        <p>برای ارسال درخواست می توانید بر روی گزینه مورد نظر کلیک کنید.</p>
+
+        <button type="submit" value="submit" ><a href ="{% url 'accounts:index' %}"> بازگشت به صفحه اصلی </a></button>
+    </div></div>
+
+<div class="row">
+    <div class="col-sm-4 col-md-4">
+
+        <div class="w3-panel" style="width:50%">
+          <button class="w3-button w3-block w3-red ">بورس</button>
+        </div>
+        <div class="w3-panel" style="width:60%;">
+          <button class="w3-button w3-block w3-yellow">آفیس</button>
+        </div>
+
+        <div class="w3-panel" style="width:75%; ">
+          <button class="w3-button w3-block w3-orange">عکاسی</button>
+        </div>
+
+        <div class="w3-panel" style="width:85% ">
+          <button class="w3-button w3-block w3-blue ">فتوشاپ</button>
+        </div>
+        <div class="w3-panel" style="width:100%;">
+          <button class="w3-button w3-block w3-gray ">زبان انگلیسی</button>
+        </div>
+
+    </div>
+    <div class="col-md-4 col-sm-4">
+        <p><button class="w3-btn w3-block w3-blue">زبان برنامه نویسی پایتون</button></p>
+        <p><button class="w3-btn w3-block w3-teal">طراحی سایت به زبان برنامه نویسی پایتون</button></p>
+        <p><button class="w3-btn w3-block w3-orange ">گامپیوتر پایه</button></p>
+        <p><button class="w3-btn w3-block w3-yellow">کامپیوتر متوسطه</button></p>
+        <p><button class="w3-btn w3-block w3-red">کامپیوتر پیشرفته</button></p>
+
+    </div>
+    <div class="col-sm-4 col-md-4" style="direction: rtl;">
+
+        <div class="w3-panel" style="width:50%;">
+          <button class="w3-button w3-block w3-red ">اتوکد</button>
+        </div>
+        <div class="w3-panel" style="width:60%;">
+          <button class="w3-button w3-block w3-yellow">ICDL</button>
+        </div>
+
+        <div class="w3-panel" style="width:75%;">
+          <button class="w3-button w3-block w3-orange">فیلمبرداری</button>
+        </div>
+
+        <div class="w3-panel" style="width:85%;">
+          <button class="w3-button w3-block w3-blue ">اینترنت</button>
+        </div>
+        <div class="w3-panel" style="width:100%;">
+          <button class="w3-button w3-block w3-gray ">برنامه حسابداری</button>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+{% endblock %}

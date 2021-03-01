@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{%  block content %}
+<div class="row" style="direction: rtl; padding: 10px 20px 10px 10px;text-align: right;">
+    <h1><mark>خدمات اینترنتی</mark></h1>
+    <P>ما بستری را فراهم آورده تا شما بتوانید یک کافی نت مجازی را در کنار خود احساس کنید و</P>
+    <p>تمامی کارهایی که در این حوزه می باشد را به راحتی و فقط با چند کلیک ساده انجام دهید.</p>
+    <p>برای ارسال درخواست می توانید بر روی گزینه مورد نظر کلیک کنید.</p>
+
+        <button type="submit" value="submit" ><a href ="{% url 'accounts:index' %}"> بازگشت به صفحه اصلی </a></button>
+
+</div>
+
+<div class="row" style="direction: rtl; padding: 10px 20px 10px 10px;text-align: right;">
+
+        <div class="w3-panel" style="width:20%;">
+      <button class="w3-button w3-block w3-black">پیمانکاری</button>
+    </div>
+</div>
+
+{% endblock %}

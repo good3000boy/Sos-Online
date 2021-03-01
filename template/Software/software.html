@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{%  block content %}
+<div class="row" style="direction: rtl; padding: 10px 20px 10px 10px;text-align: right;">
+    <h1><mark>نرم افزارهای تخصصی</mark></h1>
+    <P>ما بستری را فراهم آورده تا شما بتوانید تمام مشکلات مربوط به نرم افزار تخصصی را حل کنید</P>
+    <p> فقط با چند کلیک ساده مشکلات خود را هموار سازید</p>
+    <p>برای ارسال درخواست می توانید بر روی گزینه مورد نظر کلیک کنید.</p>
+
+        <button type="submit" value="submit" ><a href ="{% url 'accounts:index' %}"> بازگشت به صفحه اصلی </a></button>
+
+</div>
+
+<div class="row" style="direction: rtl; padding: 10px 20px 10px 10px;text-align: right;">
+
+    <div class="w3-panel" style="width:50%; ">
+      <button class="w3-button w3-block w3-teal">NS</button>
+    </div>
+
+    <div class="w3-panel" style="width:60%;">
+      <button class="w3-button w3-block w3-red ">GIS</button>
+    </div>
+    <div class="w3-panel" style="width:70%; ">
+      <button class="w3-button w3-block w3-yellow">Matlab</button>
+    </div>
+
+    <div class="w3-panel" style="width:80%;">
+      <button class="w3-button w3-block w3-orange">3D Max </button>
+    </div>
+
+    <div class="w3-panel" style="width:90%; ">
+      <button class="w3-button w3-block w3-blue ">Auto Cad</button>
+    </div>
+    <div class="w3-panel" style="width:100%;">
+      <button class="w3-button w3-block w3-gray ">سیستم عامل لینوکس</button>
+    </div>
+</div>
+
+{% endblock %}

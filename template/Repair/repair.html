@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row" style="direction: rtl;text-align: right;padding: 10px 20px 10px 10px;">
+    <h1> <mark> تعمیرات </mark></h1>
+    <p>خدمت‌ها یا سرویس‌ها به هرگونه فعالیت یا مزیت گویند که از یک طرف به طرف دیگر ارائه می‌شود</p>
+    <p> و لزوماً نامحسوس است و مالکیت چیزی را به دنبال ندارد.</p>
+    <h5>
+        کارشناسان ما آماده خدمت رسانی برای شما با بهترین کیفیت و با کمترین هزینه می باشند
+    </h5><br>
+    <p><h3>
+        ضمانت ما ، کیفیت ماست
+    </h3></p>
+</div>
+<div class="row " style="direction: rtl">
+    <div style="padding-right: 50px;padding-bottom: 50px;text-align: right">
+        <p>برای ارسال درخواست می توانید بر روی گزینه مورد نظر کلیک کنید.</p>
+
+        <button type="submit" value="submit" ><a href ="{% url 'accounts:index' %}"> بازگشت به صفحه اصلی </a></button>
+    </div></div>
+<div class="row">
+    <div class="col-sm-6 col-md-6">
+
+        <div class="w3-panel" style="width:40%;">
+          <button class="w3-button w3-block w3-black"> تلفن </button>
+        </div>
+
+        <div class="w3-panel" style="width:50%;">
+          <button class="w3-button w3-block w3-teal">تلویزیون</button>
+        </div>
+
+        <div class="w3-panel" style="width:60%">
+          <button class="w3-button w3-block w3-red ">موبایل</button>
+        </div>
+        <div class="w3-panel" style="width:70%;">
+          <button class="w3-button w3-block w3-yellow">مانیتور</button>
+        </div>
+
+        <div class="w3-panel" style="width:80%; ">
+          <button class="w3-button w3-block w3-orange">لوازم برقی</button>
+        </div>
+
+        <div class="w3-panel" style="width:90% ">
+          <button class="w3-button w3-block w3-blue ">دوربین مدار بیسته</button>
+        </div>
+        <div class="w3-panel" style="width:100%;">
+          <button class="w3-button w3-block w3-gray ">دزدگیر اماکن</button>
+        </div>
+
+    </div>
+    <div class="col-sm-6 col-md-6" style="direction: rtl;">
+
+        <div class="w3-panel" style="width:40%;">
+          <button class="w3-button w3-block w3-black">آیفون</button>
+        </div>
+
+        <div class="w3-panel" style="width:50%;">
+          <button class="w3-button w3-block w3-teal">یخچال</button>
+        </div>
+
+        <div class="w3-panel" style="width:60%;">
+          <button class="w3-button w3-block w3-red ">کامپیوتر</button>
+        </div>
+        <div class="w3-panel" style="width:70%;">
+          <button class="w3-button w3-block w3-yellow">تابلو روان</button>
+        </div>
+
+        <div class="w3-panel" style="width:80%;">
+          <button class="w3-button w3-block w3-orange">دستگاه دیجیتال</button>
+        </div>
+
+        <div class="w3-panel" style="width:90%;">
+          <button class="w3-button w3-block w3-blue ">تابلو ال ای دی</button>
+        </div>
+        <div class="w3-panel" style="width:100%;">
+          <button class="w3-button w3-block w3-gray ">دزدگیر اماکن</button>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}
