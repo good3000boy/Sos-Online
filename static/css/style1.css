@@ -1,0 +1,688 @@
+ /*<!-- ################# Header CSS Here#######################--->*/
+a.reg{
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #6c757d;
+    /*background-color: #f1b0b7;*/
+   font-size: 14px;
+
+}
+ a.reg:hover{
+   text-decoration: none;
+   background-color: #9fcdff;
+ }
+ * {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+
+img {
+
+  max-width: 100%; }
+img.image{
+  padding-right: 0px;
+  padding-top: 0px;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: #444; }
+
+a:hover {
+  color: white; }
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0; }
+
+a:hover,
+a:focus,
+input,
+textarea {
+  text-decoration: none;
+  outline: none; }
+
+.center {
+  text-align: center; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.cp {
+  cursor: pointer; }
+
+html, body {
+  height: 100%;
+
+}
+
+p {
+  margin-bottom: 0px;
+  width: 100%; }
+
+.no-padding {
+  padding: 0px; }
+
+.no-margin {
+  margin: 0px; }
+
+.hid {
+  display: none; }
+
+.top-mar {
+  margin-top: 15px; }
+
+.h-100 {
+  height: 100%; }
+
+::placeholder {
+  color: #747f8a !important;
+  font-size: 13px;
+  opacity: .5 !important; }
+
+.container-fluid {
+  padding: 0px; }
+
+h1, h3, h4, h5, h6 {
+  font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+
+strong {
+  font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+
+body {
+  background-color: #f7f7ff !important;
+  font-family: "mouse-300", Arial, Helvetica, sans-serif;
+  color: #6A6A6A; }
+
+.session-title {
+  padding: 30px;
+  margin: 0px; }
+  .session-title h2 {
+    width: 100%;
+    text-align: center; }
+  .session-title p {
+    max-width: 850px;
+    text-align: center;
+    float: none;
+    margin: auto; }
+  .session-title span {
+    float: right;
+    font-style: italic; }
+
+.inner-title {
+  padding: 20px;
+  padding-left: 0px;
+  margin-bottom: 30px; }
+  .inner-title h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "slab", Arial, Helvetica, sans-serif; }
+  .inner-title p {
+    width: 100%;
+    text-align: center; }
+
+.page-nav {
+  padding: 40px;
+  text-align: center; }
+  .page-nav ul {
+    float: none;
+    margin: auto; }
+  .page-nav h2 {
+    font-size: 36px;
+    width: 100%;
+    color: #444; }
+    @media screen and (max-width: 600px) {
+      .page-nav h2 {
+        font-size: 26px; } }
+  .page-nav ul li {
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 16px; }
+    .page-nav ul li i {
+      width: 30px;
+      text-align: center;
+      color: #444; }
+    .page-nav ul li a {
+      color: #444; }
+
+.btn-success {
+  background-color: #00ab9f;
+  border-color: #00ab9f; }
+  .btn-success:hover {
+    background-color: #00ab9f !important;
+    border-color: #00ab9f !important; }
+  .btn-success:active {
+    background-color: #00ab9f !important;
+    border-color: #00ab9f !important; }
+  .btn-success:focus {
+    background-color: #00ab9f !important;
+    border-color: #00ab9f !important;
+    box-shadow: none !important; }
+
+.btn-info {
+  background-color: #00a8df;
+  border-color: #00a8df; }
+  .btn-info:hover {
+    background-color: #00a8df !important;
+    border-color: #00a8df !important; }
+  .btn-info:active {
+    background-color: #00a8df !important;
+    border-color: #00a8df !important; }
+  .btn-info:focus {
+    background-color: #00a8df !important;
+    border-color: #00a8df !important;
+    box-shadow: none !important; }
+
+.btn {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px; }
+
+.form-control:focus {
+  box-shadow: none !important;
+  border: 2px solid  #00a8df; }
+
+.btn-light {
+  color: #3F3F3F; }
+
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 100%; } }
+.collapse.show {
+  display: block !important; }
+
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #0d7a40 !important; }
+
+.form-control {
+  background-color: #F8F8F8;
+  margin-bottom: 20px; }
+  .form-control:focus {
+    background-color: #FFF;
+    border-color: #CCC; }
+
+body {
+  /*background-image: url(../images/confectionary.png); */
+}
+  body .body-container {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #f7f7ff; }
+
+/* ===================================== Header CSS ================================== */
+header {
+  padding: 0px;
+  /*margin: 0px -15px;*/
+  /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);*/
+  width: 100%;
+  z-index: 999; }
+  header .header-top {
+    background-color: #f44236; }
+    header .header-top .left-item ul li {
+      float: left;
+      color: #FFF;
+      padding: 10px; }
+    header .header-top .right-item ul {
+      float: right; }
+      header .header-top .right-item ul li {
+        float: left;
+        color: #FFF;
+        padding: 10px; }
+  header .header-nav {
+    font-family: 'Markazi Text', serif;
+    padding: 20px 0px;
+
+  color: white}
+    header .header-nav .nav-item ul {
+      float: right;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding-top: 10px;
+    }
+      header .header-nav .nav-item ul li {
+        text-align: center;
+        float: left;
+        font-family: 'Markazi Text', serif;
+        font-size: 15px;
+        padding: 0px; }
+        @media screen and (max-width: 916px) {
+          header .header-nav .nav-item ul li {
+            padding: 30px 20px; } }
+        @media screen and (max-width: 767px) {
+          header .header-nav .nav-item ul li {
+            float: none;
+            padding: 14px;
+            border-top: 1px solid #CCC; }}
+    header .header-nav .nav-img img {
+      width: 250px;
+      padding: 10px;
+      padding-left: 20px;
+      margin-top: 10px; }
+  header .scroll-to-fixed-fixed {
+    background-color: black;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+.small-menu {
+  float: right;
+  color: #1ac2f9;
+  font-size: 32px;
+  margin-top: 17px;
+  margin-right: 12px; }
+  @media screen and (max-width: 767px) {
+    .small-menu {
+      margin-top: 11px; } }
+
+/*..............................*/
+
+header{
+  font-family: 'Markazi Text', serif;
+  padding: 10px;
+  padding-top: 0px;
+  background-color: #003366;
+}
+.navbar-nav > li > .dropdown-menu{
+   min-width: 200px;
+   background-color: #003366;
+}
+.navbar-nav > li > .dropdown-menu a{
+  color: white;
+}
+.span{
+  padding-right: 4px;
+}
+
+.navbar-nav > li > .dropdown-menu a:hover{
+  color: orange;
+  /*padding: 10px;*/
+}
+@media screen and (max-width: 1050px) {
+  .main-header .logo {
+    padding-left: 30px !important;
+  }
+}
+
+
+.dropdown:hover .dropbtn {
+  border-radius: 2px;
+  background-color: #003366;
+  color: orange;
+  font-size: 17px;
+}
+.navbar-nav a {
+  float: left;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: right;
+  padding: 11px 13px;
+
+}
+.navbar-nav > a:hover{
+  text-decoration: none;
+  padding: 11px 13px;
+  color: white;
+  border: 3px solid orange;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.col-sm-4{
+  float: left;
+  padding: 10px;
+  padding-top: 3px;
+}
+.col-sm-4 a{
+  float: none;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  color: white;
+}
+.col-sm-4 a:hover {
+  text-decoration: none;
+  color: orange;
+}
+.col-sm-11{
+  float: left;
+  padding: 10px;
+  padding-top: 3px;
+}
+.col-sm-11 a{
+  float: none;
+  /*padding: 10px;*/
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  color: white;
+}
+.col-sm-11 a:hover{
+  text-decoration: none;
+  color: orange;
+}
+.col-sm-3{
+  text-decoration: none;
+  color: orange;
+}
+.col-sm-3 a {
+  float: none;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  color: white;
+}
+
+.col-sm-3 a:hover {
+  text-decoration: none;
+  color: orange;
+}
+
+.col-sm-6 {
+  float: left;
+  padding: 10px;
+  padding-top: 3px;
+}
+
+.col-sm-6 a {
+  float: none;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  color: white;
+
+}
+
+.col-sm-6 a:hover {
+  text-decoration: none;
+  color: orange;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*...........logo..........*/
+.header-top{
+  margin: 0px;
+}
+.header-top .logo {
+    line-height: 80px;
+    padding-left: 60px;
+  text-align: center;
+}
+
+.header-top .logo a {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: black;
+}
+.header-top .logo a em {
+    font-style: normal;
+    color: #f5a425;
+}
+
+@media screen and (max-width: 950px) {
+  .main-menu {
+    padding-right: 0 !important;
+  }
+}
+.header-top .logo {
+    line-height: 73px;
+  }
+
+@media screen and (max-width: 916px) {
+    header .header-nav .nav-item ul li {
+      padding: 0px 0px;
+    }
+  }
+@media screen and (max-width: 767px) {
+    header .header-nav .nav-item ul li {
+      float: none;
+      padding: 5px;
+      border-top: 1px solid #CCC;
+    }
+  }
+
+
+.dropbtn {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 11px 13px;
+    margin: 0px;
+    padding-top: 0px;
+
+  }
+.dropbtn:hover{
+  text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    direction: rtl;
+  }
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0px;
+
+  }
+
+.dropdown-menu a {
+    padding: 5px 0px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 14px;
+  }
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: #003366;
+
+  }
+
+header .header-nav .nav-img img {
+    width: 250px;
+    margin-top: 0px;
+    padding: 12px 30px 5px 5px;
+  }
+
+.navbar-nav > li > .dropdown-menu {
+  min-width: 300px;
+
+}
+
+  /*<!-- ################# Body CSS Here#######################--->*/
+
+/* ===================================== Slider Style CSS ================================== */
+.slider {
+  position: relative;
+  margin-bottom: -24px;
+  padding-top: 2px;
+  }
+
+.slider-captions {
+  position: absolute;
+  bottom: 160px;
+  text-align: center ; }
+  @media screen and (max-width: 1050px) {
+    .slider-captions {
+      bottom: 100px !important; }
+      .slider-captions .slider-title {
+        font-size: 42px; } }
+  @media screen and (max-width: 810px) {
+    .slider-captions {
+      bottom: 50px !important; }
+      .slider-captions .slider-title {
+        font-size: 32px; } }
+  @media screen and (max-width: 572px) {
+    .slider-captions {
+      display: none; } }
+
+.slider-title {
+  font-family: 'Markazi Text', serif;
+  font-size: 66px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0px;
+  }
+
+.slider-text {
+  font-family: 'Markazi Text', serif;
+  margin-bottom: 20px;
+  color: #fff;
+  letter-spacing: 2px;}
+
+.slider-img {
+  background: -moz-linear-gradient(top, rgba(45, 32, 44, 0.2) 0%, rgba(45, 32, 44, 0.2) 100%);
+  background: -webkit-linear-gradient(top, rgba(45, 32, 44, 0.2) 0%, rgba(45, 32, 44, 0.2) 100%);
+  background: linear-gradient(to bottom, rgba(45, 32, 44, 0.2) 0%, rgba(45, 32, 44, 0.2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc1b2429', endColorstr='#cc1b2429', GradientType=0);
+  position: relative; }
+
+.slider-img img {
+  position: relative;
+  z-index: -1; }
+
+.slider .owl-nav .owl-prev, .slider .owl-nav .owl-next {
+  color: #fff;
+  display: inline-block;
+  zoom: 1;
+  margin: 5px;
+  padding: 6px 12px;
+  font-size: 22px;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
+  background: transparent;
+  filter: Alpha(Opacity=50);
+  line-height: 1;
+  border: 2px solid #fff; }
+
+.owl-controls.clickable .owl-buttons div:hover {
+  filter: Alpha(Opacity=100);
+  opacity: 1;
+  text-decoration: none;
+  background-color: #fff; }
+
+.slider .owl-nav .owl-prev {
+  position: absolute;
+  top: 40%;
+  left: 0px; }
+
+.slider .owl-nav .owl-next {
+  position: absolute;
+  top: 40%;
+  right: 0px; }
+
+.slider .owl-dots .owl-dot {
+  position: relative;
+  text-align: center;
+  bottom: 40px;
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.slider .owl-dots .owl-dot span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: 0px 0px 10px 10px;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.8;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  float: left; }
+
+.slider .owl-dots .owl-dot.active span {
+  background-color: #fff; }
+
+.slider .owl-dots .owl-dot.active span, .slider .owl-controls.clickable .owl-page:hover span {
+  background-color: #fff;
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1; }
+
+.slider .col-lg-offset-2 {
+  float: none;
+  margin: auto; }
+
+
+/* ===================================== Fooer CSS ================================== */
+.footer {
+  background-color: #003366;
+  font-family: 'Markazi Text', serif;
+  text-align: right;
+  padding: 10px 50px;
+  padding-bottom: 0px;
+  color: #FFF; }
+  @media screen and (max-width: 940px) {
+    .footer {
+      padding: 30px 10px; } }
+  .footer h2 {
+    /*border-bottom: 1px solid orange;*/
+    font-family: 'Markazi Text', serif;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 10px;
+  padding-bottom: 15px;}
+  .footer > p {
+    text-align: left;
+    text-indent: 20px;
+    padding-right: 20px;
+  }
+  .footer .link-list li {
+    padding: 10px;
+    border-bottom: 1px solid #6C6C6C; }
+    .footer .link-list li a {
+      color: #FFF;
+    text-decoration: none;}
+    .footer .link-list li i {
+      float: right; }
+  .footer .map-img {
+    font-weight: 600;
+    font-size: 17px;
+    padding-left: 20px; }
+  .footer address a {
+    color: #FFF; }
+
+  .md-margin-bottom-40{
+    text-align: left;
+    padding-left: 40px;
+  }
+  .footer .link-list li{
+    text-align: center;
+  }
+
+.copy {
+  padding: 20px;
+  background-color: #171a1d;
+  color: #FFF; }
+  .copy a {
+    color: #FFF; }
+  .copy span {
+    float: right; }
+    .copy span i {
+      margin-right: 20px; }
+
